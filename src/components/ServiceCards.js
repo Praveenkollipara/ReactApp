@@ -3,17 +3,18 @@ import './Cards.css';
 import CardItem from './CardItem';
 import { useEffect, useState } from "react";
 import axios from "axios";
-import {Col,Row} from "react-bootstrap";
+import {Row ,Col} from "react-bootstrap";
 
 
 function setCard(obj)
 {
-  return  <Col lg={3}><CardItem
+  return  <Col lg={3} className="card_items"><CardItem
   src={obj.image}
   text={obj.name}
   label='Services'
   path='/'
-/></Col>
+/>
+</Col>
 }
 function ServiceCards() {
   const [services,setServices]=useState([]);
@@ -35,9 +36,7 @@ function ServiceCards() {
       <h1>Choose a service to get started.</h1>
       <div className='cards__container'>
         <div className='cards__wrapper'>
-        <Row><Col lg={2}></Col>
-        <Col lg={8}>{services.map(setCard)}</Col>
-        <Col lg={2}></Col></Row>
+       <Row>{services.map(setCard)}</Row> 
         </div>
       </div>
     </div>
