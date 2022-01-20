@@ -19,7 +19,7 @@ function Cards() {
               src='images/services.jpg'
               text='LOOKING FOR HOUSE SERVICES! CLICK HERE >'
               label='Services'
-              path='/Services'
+              path='/services'
             />
             <CardItem
               src='images/PackersMovers.jpg'
