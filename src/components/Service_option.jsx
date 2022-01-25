@@ -1,8 +1,9 @@
-import {React,useState,createContext} from "react";
+import React from "react";
+import {useState,createContext} from "react";
 import {Button,Card, Row,Col} from "react-bootstrap";
 import {Link} from "react-router-dom";
 function Service_option(props)
-{ //<!--<Link to={`/Filter/${props.name}/${props.cost}/${true}`}>-->
+{ 
     return <div>
     <Card id={props.name} className="mt-3" style={{width:"100%",height:"100%"}}>
   <Card.Img className="img.fluid d-inline mx-auto mt-1" style={{width:"300px",height:"250px"}} variant="top" src={props.image} />
@@ -16,7 +17,7 @@ function Service_option(props)
      {props.details}
      
     </Card.Text>
-   <Button  variant="primary"  >Book</Button>
+    <Link to={`/Filter/${props.name}/${props.cost}/${true}`}><Button  variant="primary"  >Book</Button></Link>
   </Card.Body>
 </Card>
       </div>;
