@@ -10,7 +10,7 @@ function Service_option(props)
   <Card.Body>
     <Card.Title>{props.name}</Card.Title>
     <Card.Text>
-     <p className="mr-5 d-inline">Cost : ₹{props.cost}</p>
+     <p className="mr-5 d-inline">Cost : Rs{props.cost}</p>
      <p className="mr-2 d-inline">Duration : {props.time}</p>
      <br></br>
      <p className="m-0">Rating : {props.rating}</p>

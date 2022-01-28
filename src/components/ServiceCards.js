@@ -8,11 +8,11 @@ import {Row ,Col} from "react-bootstrap";
 
 function setCard(obj)
 {
-  return  <Col lg={3} md={4} sm={6} className="card_items"><CardItem
+  return  <Col lg={3} md={4} sm={6} className="card_items mb-5"><CardItem
   src={obj.image}
   text={obj.name}
   label='Services'
-  path={obj.cname}
+  path={`/Option/${obj.cname}`}
 />
 </Col>
 }
